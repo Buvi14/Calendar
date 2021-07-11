@@ -1,0 +1,76 @@
+  
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+  }
+  
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #4158d0;
+    background-image: linear-gradient( 
+        43deg
+        , #0f0f0f 0%, #3a3737 46%, #464040 100% );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar{
+    width: 50%;
+    height: 60%;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.5vw;
+    border-radius: 0.5vw;
+}
+.year{
+    /* padding-right: 25vw; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    background-color: #a9a9a98c;
+}
+.year>.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 10%;
+    cursor: pointer;
+}
+.days{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    font-weight: bold;
+}
+.day{
+    width: 100%;
+    height: 67%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.day div{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    width: calc(100% / 7);
+}
+
+.prev_month,.next_month{
+    opacity: 0.5;
+}
+.today{
+    background-color: #a9a9a9;
+    color: #ffffff;
+    border-radius: 0.3vw;
+}
